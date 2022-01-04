@@ -19,9 +19,7 @@ const ItemList = ({ item, index }) => {
          ></div>
          {item.text}
 
-         <SecondaryButton onClick={(e) => dispatch(deleteTodoAction(index))}>
-            Delete
-         </SecondaryButton>
+         
       </div>
    );
 };

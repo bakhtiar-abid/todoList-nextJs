@@ -12,11 +12,17 @@ const List = () => {
     return (
        <HomeLayout>
           <div className={style["list-container"]}>
-             
-             {list.map((item, index) => (
-                 <ItemList key={index} item = {item} index= {index} ></ItemList>
-               
-             ))}
+             {list.length > 0 ? (
+                list.map((item, index) => (
+                   <ItemList key={index} item={item} index={index}></ItemList>
+                ))
+             ) : (
+                <div>
+                   <h1 className="text-center text-8xl bg-red-300 justify-items-center my-10">
+                      You have no todo items
+                   </h1>
+                </div>
+             )}
           </div>
        </HomeLayout>
     );

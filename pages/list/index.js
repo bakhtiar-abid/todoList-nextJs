@@ -12,7 +12,7 @@ const List = () => {
     return (
        <HomeLayout>
           <div className={style["list-container"]}>
-            
+             
              {list.map((item, index) => (
                  <ItemList key={index} item = {item} index= {index} ></ItemList>
                
